@@ -291,6 +291,7 @@ jobs:
           https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)" \
           dexcom_upload_readings \
           now_line \
+          future_carbs_4h \
           watch_title \
           meal_days \
           profiles \
