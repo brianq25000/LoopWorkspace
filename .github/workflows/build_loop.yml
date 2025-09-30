@@ -278,6 +278,9 @@ jobs:
           # Copy url from a GitHub commit or pull request and insert below, and remove the "#" sign from the beginning of the line to activate:
           #curl url_to_github_commit.patch | git apply --directory=LoopKit -v --whitespace=fix
 
+          # LoopKit: File: Update DIA to 240 minutes for Humalog and Fiasp
+          curl https://github.com/brianq25000/LoopKit/commit/f2a560c5cf1b0f06d766f62396bbd1891f8105b9.patch | git apply -v --directory=LoopKit
+
           # Submodule xxxxx patches:
 
           # Add patches for customization of additional submodules by following the templates above, 
@@ -301,6 +304,7 @@ jobs:
 
           # the final customization listed above CANNOT have a continuation character
           # more customizations can be pasted after this line
+          
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
         run: |
